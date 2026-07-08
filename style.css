@@ -1,7 +1,11 @@
+/* reset style */
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: "Open Sans", sans-serif;
+}
+img{
+    max-width: 100%;
 }
 /* common style */
 .common-btn {
@@ -9,20 +13,42 @@
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     color: wheat;
     border: none;
+    cursor: pointer;
 }
+.outline-btn {
+    background-color:white ;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fd6e0aFF;
+    border: 1px solid #fd6e0aFF;
+    cursor: pointer;
+}
+.banner-image{
+    background-image: url(./images/developer.png), url(./images/header_bg.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    /* background-size: cover; */
+    max-width: 50%, 50%;
+    max-height: 50% 50%;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+/* nav bar */
 nav {
     display: flex;
     justify-content: space-between;
-    max-width: 1100px;
-    margin: auto;
     padding: 10px 0;
 }
 .logo {
-    font-weight: bold;
-    font-size: 40px;
+    font-weight: 800;
+    font-size: 45px;
 }
 .logo-r {
     color: #fd6e0aFF;
@@ -36,4 +62,43 @@ ul {
 }
 ul li a {
     text-decoration: none;
+    color:  rgba(71, 71, 71, 1);
+}
+
+/* hero section */
+.hero-parent-container-root{
+    /* display: grid;
+    background-image: url(./images/developer.png), url(./images/header_bg.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center ; */
+    /* background-size: 15%, 85%;
+    background-position: left center, right center;
+    width: 1400px, 1400px;
+    height: 456px, 456px;
+    width: auto;
+    height: auto; */
+}
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-left-p-1{
+    font-size: 45px;
+    font-weight: 600;
+    color:  rgba(71, 71, 71, 1);
+}
+.hero-left h2{
+    font-weight: 700;
+    font-size: 85px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hero-left-p-2{
+    color:  rgba(71, 71, 71, 1);
+}
+.hero-left-btn-parent{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
 }
