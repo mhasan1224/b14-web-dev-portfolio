@@ -28,13 +28,12 @@ img{
     border: 1px solid #fd6e0aFF;
     cursor: pointer;
 }
-.banner-image{
-    background-image: url(./images/developer.png), url(./images/header_bg.png);
+.banner {
+    background-color: #fff8f3;
+    background-image: url("./images/developer.png"), url("./images/header_bg.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: left center, right center;
-    /* background-size: cover; */
-    max-width: 50%, 50%;
-    max-height: 50% 50%;
+    background-position: 20px top, right bottom;
+    background-size: auto, contain;
 }
 .container{
     max-width: 1000px;
@@ -49,7 +48,7 @@ nav {
 .logo {
     font-weight: 800;
     font-size: 45px;
-}
+}cj
 .logo-r {
     color: #fd6e0aFF;
 }
@@ -66,17 +65,16 @@ ul li a {
 }
 
 /* hero section */
-.hero-parent-container-root{
-    /* display: grid;
-    background-image: url(./images/developer.png), url(./images/header_bg.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left center, right center ; */
-    /* background-size: 15%, 85%;
-    background-position: left center, right center;
-    width: 1400px, 1400px;
-    height: 456px, 456px;
-    width: auto;
-    height: auto; */
+.hero-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.hero-right img {
+    width: 500px;
+}
 }
 .hero-parent{
     display: flex;
@@ -91,8 +89,8 @@ ul li a {
 .hero-left h2{
     font-weight: 700;
     font-size: 85px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
 }
 .hero-left-p-2{
     color:  rgba(71, 71, 71, 1);
